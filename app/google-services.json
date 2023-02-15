@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "659659303256",
+    "project_id": "phonemithra",
+    "storage_bucket": "phonemithra.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659659303256:android:a1279639582af7d2361d2d",
+        "android_client_info": {
+          "package_name": "com.example.phonemithra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "659659303256-t5n3dmmdqrn60s1kd5te8eouuq77n4tf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnrGnWkEe1FG5qU1mZytFxxw__YTWrjpQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "659659303256-t5n3dmmdqrn60s1kd5te8eouuq77n4tf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

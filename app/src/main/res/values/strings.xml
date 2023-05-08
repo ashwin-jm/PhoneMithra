@@ -9,6 +9,7 @@
     <string name="register_name">Full Name</string>
     <string name="register_email">Email id</string>
     <string name="register_phone">Phone number</string>
+    <string name="register_recov_phone">Recovery number</string>
     <string name="register_password">Create new password</string>
     <string name="register_passwordc">Confirm new password</string>
     <string name="register_button">Register</string>
@@ -19,5 +20,11 @@
     <string name="button_sound">Sound Profile</string>
     <string name="button_lock">Screen Lock</string>
     <string name="homeWelcome">Welcome,</string>
+
+    <string name="location_desc">This feature of the app will help you to locate your phone anytime by just sending a text message in the below given format</string>
+    <string name="permission">Give permission</string>
+    <string name="contact_desc">This feature of the app will help you to access any contact on your device remotely by just sending a text message in the below given format</string>
+    <string name="sound_desc">This feature of the app will help you to change the sound profile of your device remotely by just sending a text message in the below given format</string>
+    <string name="lock_desc">This feature of the app will help you to lock your device remotely by just sending a text message in the below given format</string>
 
 </resources>

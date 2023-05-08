@@ -39,21 +39,24 @@ class RegisterActivity : AppCompatActivity() {
         val email: EditText = findViewById(R.id.registerEmail)
         val name = findViewById<EditText>(R.id.registerName)
         val phone: EditText = findViewById(R.id.registerPhone)
+        val recoveryphone: EditText = findViewById(R.id.registerRecoveryNumber)
         val pass: EditText = findViewById(R.id.registerPassword)
         val passc: EditText = findViewById(R.id.registerPasswordc)
 
         val username = name.text.toString()
         val useremail = email.text.toString()
         val userphone = phone.text.toString()
+        val userrecoveryphone = recoveryphone.text.toString()
         val userpass = pass.text.toString()
         val userpassc = passc.text.toString()
 
         val userData = HashMap<String, Any>()
         userData["user_name"] = username
         userData["user_phone"] = userphone
+        userData["user_recovery_phone"] = userrecoveryphone
         userData["user_email"] = useremail
 
-        if(username.isEmpty() || useremail.isEmpty() || userphone.isEmpty() || userpass.isEmpty() || userpassc.isEmpty()){
+        if(username.isEmpty() || useremail.isEmpty() || userphone.isEmpty() || userrecoveryphone.isEmpty() || userpass.isEmpty() || userpassc.isEmpty()){
             Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show()
             return
         }

@@ -27,10 +27,17 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
         auth = Firebase.auth
 
-        val loginbutton: Button = findViewById(R.id.loginButton)
-        loginbutton.setOnClickListener {
-            performLogIn()
+        if(auth.currentUser != null){
+            startActivity(Intent(this, MainActivity::class.java))
         }
+        else{
+            val loginbutton: Button = findViewById(R.id.loginButton)
+            loginbutton.setOnClickListener {
+                performLogIn()
+            }
+        }
+
+
 
         val loginregister: TextView = findViewById(R.id.loginRegister)
         loginregister.setOnClickListener {

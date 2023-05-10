@@ -12,6 +12,7 @@
     <string name="register_recov_phone">Recovery number</string>
     <string name="register_password">Create new password</string>
     <string name="register_passwordc">Confirm new password</string>
+    <string name="register_passcode">Enter a 4 digit passcode</string>
     <string name="register_button">Register</string>
     <string name="register_login">Already have an account? Login here</string>
 

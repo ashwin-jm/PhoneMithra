@@ -42,6 +42,7 @@ class RegisterActivity : AppCompatActivity() {
         val recoveryphone: EditText = findViewById(R.id.registerRecoveryNumber)
         val pass: EditText = findViewById(R.id.registerPassword)
         val passc: EditText = findViewById(R.id.registerPasswordc)
+        val passcode: EditText = findViewById(R.id.registerPasscode)
 
         val username = name.text.toString()
         val useremail = email.text.toString()
@@ -49,14 +50,16 @@ class RegisterActivity : AppCompatActivity() {
         val userrecoveryphone = recoveryphone.text.toString()
         val userpass = pass.text.toString()
         val userpassc = passc.text.toString()
+        val userpasscode = passcode.text.toString()
 
         val userData = HashMap<String, Any>()
         userData["user_name"] = username
         userData["user_phone"] = userphone
         userData["user_recovery_phone"] = userrecoveryphone
         userData["user_email"] = useremail
+        userData["user_passcode"] = userpasscode
 
-        if(username.isEmpty() || useremail.isEmpty() || userphone.isEmpty() || userrecoveryphone.isEmpty() || userpass.isEmpty() || userpassc.isEmpty()){
+        if(username.isEmpty() || useremail.isEmpty() || userpasscode.isEmpty() || userphone.isEmpty() || userrecoveryphone.isEmpty() || userpass.isEmpty() || userpassc.isEmpty()){
             Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show()
             return
         }
@@ -64,6 +67,10 @@ class RegisterActivity : AppCompatActivity() {
         else if(userpass != userpassc){
             Toast.makeText(this, "Passwords do not match", Toast.LENGTH_SHORT).show()
             return
+        }
+
+        else if(userpasscode.length !=4){
+            Toast.makeText(this, "Passcode should be a 4 digit number", Toast.LENGTH_SHORT).show()
         }
 
         else{

@@ -22,10 +22,15 @@
     <string name="button_lock">Screen Lock</string>
     <string name="homeWelcome">Welcome,</string>
 
-    <string name="location_desc">This feature of the app will help you to locate your phone anytime by just sending a text message in the below given format</string>
-    <string name="permission">Give permission</string>
-    <string name="contact_desc">This feature of the app will help you to access any contact on your device remotely by just sending a text message in the below given format</string>
-    <string name="sound_desc">This feature of the app will help you to change the sound profile of your device remotely by just sending a text message in the below given format</string>
-    <string name="lock_desc">This feature of the app will help you to lock your device remotely by just sending a text message in the below given format</string>
+    <string name="profileTerms">Terms &amp; Conditions</string>
 
+    <string name="location_desc">This feature of the app will help you to locate your phone anytime by just sending a text message. You need to give the location permission for the proper functioning of this feature. The format of the text message is as shown</string>
+    <string name="location_format">&quot;phonemithra &lt;your 4 digit secret pin&gt; location&quot;</string>
+    <string name="permission">Give permission</string>
+    <string name="contact_desc">This feature of the app will help you to access any contact on your device remotely by just sending a text message. You need to give the contact permission for the proper functioning of this feature. The format of the text message is as shown</string>
+    <string name="contact_format">&quot;phonemithra &lt;your 4 digit secret pin&gt;\n contact &lt;contact name&gt;&quot;</string>
+    <string name="sound_desc">This feature of the app will help you to change the sound profile of your device remotely by just sending a text message in the below given format. This feature does not need any permission for its functioning.</string>
+    <string name="sound_format">&quot;phonemithra &lt;your 4 digit secret pin&gt;\n change sound profile&quot;</string>
+    <string name="lock_desc">This feature of the app will help you to lock your device remotely by just sending a text message. You need to give the device admin permission for the proper functioning of this feature. The format of the text message is as shown</string>
+    <string name="lock_format">&quot;phonemithra &lt;your 4 digit secret pin&gt; lock&quot;</string>
 </resources>

@@ -7,6 +7,7 @@ import android.content.BroadcastReceiver
 import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
+import android.location.Geocoder
 import android.location.Location
 import android.location.LocationManager
 import android.media.AudioManager
@@ -14,6 +15,7 @@ import android.provider.ContactsContract
 import android.provider.Settings
 import android.telephony.SmsManager
 import android.telephony.SmsMessage
+import androidx.core.content.ContextCompat.startActivity
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import com.google.firebase.auth.FirebaseAuth
@@ -103,7 +105,6 @@ class SmsReceiver : BroadcastReceiver() {
         }
 
     }
-
 
 
     private fun lockScreen(password: String, context: Context?, sender: String?) {
